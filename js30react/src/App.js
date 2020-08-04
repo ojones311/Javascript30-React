@@ -8,6 +8,9 @@ class extends App {
     super()
   }
 
+  renderDrumMachine = () => {
+    return 
+  }
   render(){
     return (
       <div className="App">
@@ -15,7 +18,7 @@ class extends App {
         </div>
         <div className='App-body'>
           <Switch>
-            <Route />
+            <Route path='/drum_machine' render={}/>
           </Switch>
         </div>
       </div>
