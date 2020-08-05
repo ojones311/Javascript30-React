@@ -1,24 +1,24 @@
-import React from 'react';
+import React,{Component} from 'react';
 import {Switch, Route} from 'react-router-dom'
-import logo from './logo.svg';
 import './App.css';
 
-class extends App {
-  constructor(){
-    super()
-  }
+import Home from './Projects/Home.jsx'
+import NavBar from './Projects/NavBar.jsx'
+import DrumMachine from './Projects/DrumMachine/DrumMachine.jsx'
 
-  renderDrumMachine = () => {
-    return 
-  }
+class App extends Component {
+  
+
   render(){
     return (
       <div className="App">
-        <div className='App-header'>
+        <div className='header'>
+          <NavBar />
         </div>
         <div className='App-body'>
           <Switch>
-            <Route path='/drum_machine' render={}/>
+            <Route exact path='/' component={Home} />
+            <Route path='/drum_machine' component= {DrumMachine} />
           </Switch>
         </div>
       </div>

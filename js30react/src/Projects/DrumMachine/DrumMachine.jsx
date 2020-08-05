@@ -5,13 +5,13 @@ class DrumMachine extends Component {
     constructor(){
         super()
         this.state = {
-            isClicked = false
+            isClicked: false
         }
     }
     render(){
         return(
             <div className='main'>
-                
+                <p>Drum Machine</p>
             </div>
         )
     }
